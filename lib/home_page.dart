@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
@@ -216,10 +218,53 @@ class _HomePageState extends State<HomePage> {
                         // color: Colors.redAccent.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(20),
                         image: const DecorationImage(
-                            image: AssetImage("assets/personnage.png"),
-                            // fit: BoxFit.fill
-                            ),
+                          image: AssetImage("assets/personnage.png"),
+                          // fit: BoxFit.fill
+                        ),
                       ),
+                    ),
+                    Container(
+                      width: double.maxFinite,
+                      height: 100,
+                      // color:Colors.redAccent.withOpacity(0.3),
+                      margin: const EdgeInsets.only(left: 150, top: 50),
+                      child: Column(
+                        children: [
+                          Text(
+                            "You are doing great",
+                            style: TextStyle(
+                                fontSize: 18,
+                                fontWeight: FontWeight.bold,
+                                color: color.AppColor.homePageDetail),
+                          ),
+                          const SizedBox(
+                            height: 10,
+                          ),
+                          RichText(
+                              text: TextSpan(
+                                  text: "Keep it up\n",
+                                  style: TextStyle(
+                                    color: color.AppColor.homePagePlanColor,
+                                    fontSize: 16,
+                                  ),
+                                  children: const [
+                                TextSpan(text: "stick to your plan"),
+                              ]))
+                        ],
+                      ),
+                    ),
+                    Row(
+                      children: [
+                        Text(
+                          "Area of focus",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: 25,
+                              fontWeight: FontWeight.w500,
+                              color: color.AppColor.homePageTitle
+                          ),
+                        )
+                      ],
                     )
                   ],
                 ),
