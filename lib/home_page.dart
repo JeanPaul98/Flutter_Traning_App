@@ -211,9 +211,9 @@ class _HomePageState extends State<HomePage> {
                           ]),
                     ),
                     Container(
-                      height: 200,
+                      height: 100,
                       width: MediaQuery.of(context).size.width,
-                      margin: const EdgeInsets.only(right: 200, bottom: 30),
+                      margin: const EdgeInsets.only(right: 200,top: 30),
                       decoration: BoxDecoration(
                         // color: Colors.redAccent.withOpacity(0.2),
                         borderRadius: BorderRadius.circular(20),
@@ -252,19 +252,6 @@ class _HomePageState extends State<HomePage> {
                               ]))
                         ],
                       ),
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "Area of focus",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              fontSize: 25,
-                              fontWeight: FontWeight.w500,
-                              color: color.AppColor.homePageTitle
-                          ),
-                        )
-                      ],
                     )
                   ],
                 ),
