@@ -7,7 +7,7 @@ class AppColor {
   static Color homePageTitle = const Color(0xFF302f51);
   static Color homePageSubtitle = const Color(0xFF414160);
   static Color homePageDetail = const Color(0xFF6588f4);
-  static Color homePageDetailsecond = Color.fromARGB(255, 10, 11, 14);
+  // static Color homePageDetailsecond = Color.fromARGB(255, 10, 11, 14);
   static Color homePageIcons = const Color(0xFF3b3c5c);
   static Color homePageContainerTextSmall = const Color(0xFFf4f5fd);
   static Color homePageContainerTextBig = const Color(0xFFffffff);
